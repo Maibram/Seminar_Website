@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Video Player</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    .video-container {
+        width: 640px; /* Adjust video width as needed */
+        height: 360px; /* Adjust video height as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="video-container">
+    <video id="myVideo" controls autoplay>
+        <source src="videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+</body>
+</html>
